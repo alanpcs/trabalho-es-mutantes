@@ -1,0 +1,5 @@
+testcase1;testcase2;testcase3;testcase4;testcase5;testcase6
+mutant1;1;1;0;1;1;0
+mutant2;0;0;0;0;1;0
+mutant3;0;0;0;0;0;1
+mutant4;1;0;1;1;0;0

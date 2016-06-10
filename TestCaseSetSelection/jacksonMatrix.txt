@@ -1,0 +1,6 @@
+Mutant;testcase1;testcase2;testcase3;testcase4;testcase5;testcase6;Total;State
+mutant1;1;1;0;1;1;0;5;Dead
+mutant2;0;0;0;0;1;0;1;Dead
+mutant3;0;0;0;0;0;1;1;Dead
+mutant4;1;0;1;1;0;0;3;Dead
+mutant5;0;0;0;0;0;0;0;Alive
