@@ -10,7 +10,7 @@ do
       echo ${ProblemsRoot}${problem}/${method}/${result}
       java -jar ${TestRoot}compiled/TestCaseSetSelection.jar \
       ${ProblemsRoot}${problem}/${method}/${result} ';' \
-      true 10 | grep "Test Cases:" | cut -d':' -f2 > testcases.txt
+      true 10 | grep "Test Cases:" | cut -d':' -f2 > ${ProblemsRoot}${problem}/${method}/testcases_${result}
     done
   done
 done
