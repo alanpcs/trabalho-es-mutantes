@@ -34,7 +34,6 @@ problems_paths.each do |problem_path|
   puts "Killable mutants by operator: " + amounts.to_h.to_s
   # Creates a string representing the directory to store the results
   FileUtils::mkdir_p(problem_path+"/MS/") # Create the directory if it does not exist
-  FileUtils::mkdir_p(problem_path+"/MS/removed/") # Create the removed directory
   # For each X calls a loop passing x as argument
   X.each do |x|
     # Get the last x operators, those that generated more mutants
