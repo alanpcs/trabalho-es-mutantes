@@ -2,10 +2,13 @@
 # Author: Alan Peterson Carvalho Silva                                29/05/2016
 require 'fileutils'
 require 'csv'
+require_relative 'helpers'
+
 if ARGV[0].nil?
   printf  "Usage: ./selective.rb sources/ [x1,x2,...,xn]\n"
   exit
 end
+
 # Desired number of operators to remove, if not given, calculates to 2,5 and 10
 X = (ARGV[1] || "2,5,10").split(',').map(&:to_i)
 # Get the path of the problems from the source given in the ARGV
@@ -16,14 +19,10 @@ problems_paths.each do |problem_path|
   # Open, read and close the source matrix csv
   input = File.open(problem_path+"/Foms/result_list.csv", "r") 
   csv = CSV.new(input,{:col_sep => ";"}).to_a
-
   header = csv.shift # Remove the first line and stores whitin header
-  # Get the index of the alive mutants
-  alives_idx = csv.map.with_index { |e,i| i if (csv[i][1..csv[i].length-2])
-    .map(&:to_i).reduce(:+)==0 }.compact
-  # Remove from alive mutants from csv
-  alives_idx.reverse.each{|index| csv.delete_at(index)}
-  puts "--"+ alives_idx.count.to_s + " alive mutants removed before selection" 
+
+  # Calls method that delete alive mutants from csv
+  delete_alives_from_csv(csv)
   # Transpose de csv and store the first column as an array (to avoid cache miss) 
   mutants = csv.transpose.first
 
