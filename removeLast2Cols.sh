@@ -1,1 +1,0 @@
-cat result_list.csv | rev | cut -d";" --complement -f-2 | rev > oi.csv

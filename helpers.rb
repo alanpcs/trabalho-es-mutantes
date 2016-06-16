@@ -8,3 +8,23 @@ def delete_alives_from_csv(csv)
   alives_idx.reverse.each{|index| csv.delete_at(index)}
   # puts "--"+ alives_idx.count.to_s + " alive mutants removed before selection" 
 end
+def get_score(test_set,csv,foms_header)
+  # Convert to an array the test_set string
+  test_cases = test_set.split(',')
+  
+  # Get the indexes of the test cases in the FOM csv source
+  test_cases_idxs = test_cases.map{|e| foms_header.index(e)}
+  
+  results = []
+  # Transpose de csv matrix (to avoid cache miss) 
+  csv_t = csv.transpose.map{|e|e.map(&:to_i)}
+  results = Array.new(csv.length,0)
+  test_cases_idxs.map { |i|
+    results = [results,csv_t[i]].transpose.map {|x| x.reduce(:+)}
+  }
+  total = results.count
+  alive = results.count(0)
+  dead = total - alive
+  score = dead.to_f/total
+  return score
+end
