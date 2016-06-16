@@ -52,4 +52,7 @@ problems.each do |problem|
     end
   end
 end 
+if !ARGV[1].nil? and ARGV[1] == "--summary"
+  summarize(result)
+end
 puts JSON.pretty_generate(result)

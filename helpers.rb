@@ -28,3 +28,23 @@ def get_score(test_set,csv,foms_header)
   score = dead.to_f/total
   return score
 end
+
+def summarize(hash)
+  hash.keys.each do |problem|
+    hash[problem].keys.each do |method|
+      keys = hash[problem][method].keys
+      if keys.count > 1
+        hash[problem][method].keys.each do |file|
+          key = file.gsub(/testcases_|\.csv/,"")
+          hash[problem][key]={}
+          hash[problem][key]["average_score"] = hash[problem][method][file]["average_score"]
+        end
+        hash[problem].delete(method)
+      else
+        key = hash[problem][method].keys.first
+        hash[problem][method]["average_score"] = hash[problem][method][key]["average_score"]
+        hash[problem][method].delete(key)
+      end
+    end
+  end
+end
