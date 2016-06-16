@@ -37,13 +37,12 @@ def summarize(hash)
         hash[problem][method].keys.each do |file|
           key = file.gsub(/testcases_|\.csv/,"")
           hash[problem][key]={}
-          hash[problem][key]["average_score"] = hash[problem][method][file]["average_score"]
+          hash[problem][key] = hash[problem][method][file]["average_score"]
         end
         hash[problem].delete(method)
       else
         key = hash[problem][method].keys.first
-        hash[problem][method]["average_score"] = hash[problem][method][key]["average_score"]
-        hash[problem][method].delete(key)
+        hash[problem][method] = hash[problem][method][key]["average_score"]
       end
     end
   end

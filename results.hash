@@ -1,194 +1,74 @@
 {
   "bisect": {
-    "RandomMix": {
-      "average_score": 0.9345238095238095
-    },
-    "FirstToLast": {
-      "average_score": 0.9702380952380952
-    },
-    "Each-Choice": {
-      "average_score": 0.9365079365079364
-    },
-    "Different-Operators": {
-      "average_score": 0.9345238095238095
-    },
-    "MS_2_removed": {
-      "average_score": 0.9600340136054422
-    },
-    "MS_10_removed": {
-      "average_score": 1.0
-    },
-    "MS_10": {
-      "average_score": null
-    },
-    "MS_5": {
-      "average_score": 0.9434523809523809
-    },
-    "MS_5_removed": {
-      "average_score": 1.0
-    },
-    "MS_2": {
-      "average_score": 0.9583333333333334
-    }
+    "RandomMix": 0.9345238095238095,
+    "FirstToLast": 0.9702380952380952,
+    "Each-Choice": 0.9365079365079364,
+    "Different-Operators": 0.9345238095238095,
+    "MS_2_removed": 0.9600340136054422,
+    "MS_10_removed": 1.0,
+    "MS_10": null,
+    "MS_5": 0.9434523809523809,
+    "MS_5_removed": 1.0,
+    "MS_2": 0.9583333333333334
   },
   "bub": {
-    "RandomMix": {
-      "average_score": 0.9663182346109176
-    },
-    "FirstToLast": {
-      "average_score": 0.95483288166215
-    },
-    "Each-Choice": {
-      "average_score": 0.9829268292682928
-    },
-    "Different-Operators": {
-      "average_score": 0.9691056910569106
-    },
-    "MS_2_removed": {
-      "average_score": 0.9983739837398374
-    },
-    "MS_10_removed": {
-      "average_score": 1.0
-    },
-    "MS_10": {
-      "average_score": 0.7841011743450768
-    },
-    "MS_5": {
-      "average_score": 0.9430894308943089
-    },
-    "MS_5_removed": {
-      "average_score": 1.0
-    },
-    "MS_2": {
-      "average_score": 0.9821138211382113
-    }
+    "RandomMix": 0.9663182346109176,
+    "FirstToLast": 0.95483288166215,
+    "Each-Choice": 0.9829268292682928,
+    "Different-Operators": 0.9691056910569106,
+    "MS_2_removed": 0.9983739837398374,
+    "MS_10_removed": 1.0,
+    "MS_10": 0.7841011743450768,
+    "MS_5": 0.9430894308943089,
+    "MS_5_removed": 1.0,
+    "MS_2": 0.9821138211382113
   },
   "find": {
-    "RandomMix": {
-      "average_score": 0.9590405904059042
-    },
-    "FirstToLast": {
-      "average_score": 0.915129151291513
-    },
-    "Each-Choice": {
-      "average_score": 0.965559655596556
-    },
-    "Different-Operators": {
-      "average_score": 0.9830258302583026
-    },
-    "MS_2_removed": {
-      "average_score": 0.9929889298892987
-    },
-    "MS_10_removed": {
-      "average_score": 1.0
-    },
-    "MS_10": {
-      "average_score": 0.9981549815498155
-    },
-    "MS_5": {
-      "average_score": 0.9981549815498155
-    },
-    "MS_5_removed": {
-      "average_score": 0.9918819188191881
-    },
-    "MS_2": {
-      "average_score": 0.9983599835998361
-    }
+    "RandomMix": 0.9590405904059042,
+    "FirstToLast": 0.915129151291513,
+    "Each-Choice": 0.965559655596556,
+    "Different-Operators": 0.9830258302583026,
+    "MS_2_removed": 0.9929889298892987,
+    "MS_10_removed": 1.0,
+    "MS_10": 0.9981549815498155,
+    "MS_5": 0.9981549815498155,
+    "MS_5_removed": 0.9918819188191881,
+    "MS_2": 0.9983599835998361
   },
   "fourballs": {
-    "RandomMix": {
-      "average_score": 0.9893442622950819
-    },
-    "FirstToLast": {
-      "average_score": 0.9930327868852459
-    },
-    "Each-Choice": {
-      "average_score": 0.9770491803278688
-    },
-    "Different-Operators": {
-      "average_score": 0.9918032786885247
-    },
-    "MS_2_removed": {
-      "average_score": 0.9831967213114755
-    },
-    "MS_10_removed": {
-      "average_score": 1.0
-    },
-    "MS_10": {
-      "average_score": null
-    },
-    "MS_5": {
-      "average_score": 1.0
-    },
-    "MS_5_removed": {
-      "average_score": 0.9881147540983605
-    },
-    "MS_2": {
-      "average_score": 1.0
-    }
+    "RandomMix": 0.9893442622950819,
+    "FirstToLast": 0.9930327868852459,
+    "Each-Choice": 0.9770491803278688,
+    "Different-Operators": 0.9918032786885247,
+    "MS_2_removed": 0.9831967213114755,
+    "MS_10_removed": 1.0,
+    "MS_10": null,
+    "MS_5": 1.0,
+    "MS_5_removed": 0.9881147540983605,
+    "MS_2": 1.0
   },
   "mid": {
-    "RandomMix": {
-      "average_score": 0.9666666666666666
-    },
-    "FirstToLast": {
-      "average_score": 0.9533429533429533
-    },
-    "Each-Choice": {
-      "average_score": 0.8151515151515152
-    },
-    "Different-Operators": {
-      "average_score": 0.995238095238095
-    },
-    "MS_2_removed": {
-      "average_score": 0.9034632034632036
-    },
-    "MS_10_removed": {
-      "average_score": 1.0
-    },
-    "MS_10": {
-      "average_score": 0.3140933140933141
-    },
-    "MS_5": {
-      "average_score": 0.9805194805194806
-    },
-    "MS_5_removed": {
-      "average_score": 0.9809523809523808
-    },
-    "MS_2": {
-      "average_score": 0.9878787878787879
-    }
+    "RandomMix": 0.9666666666666666,
+    "FirstToLast": 0.9533429533429533,
+    "Each-Choice": 0.8151515151515152,
+    "Different-Operators": 0.995238095238095,
+    "MS_2_removed": 0.9034632034632036,
+    "MS_10_removed": 1.0,
+    "MS_10": 0.3140933140933141,
+    "MS_5": 0.9805194805194806,
+    "MS_5_removed": 0.9809523809523808,
+    "MS_2": 0.9878787878787879
   },
   "triangulo": {
-    "RandomMix": {
-      "average_score": 0.9531317494600433
-    },
-    "FirstToLast": {
-      "average_score": 0.9684665226781857
-    },
-    "Each-Choice": {
-      "average_score": 0.8768898488120952
-    },
-    "Different-Operators": {
-      "average_score": 0.9352051835853132
-    },
-    "MS_2_removed": {
-      "average_score": 0.988768898488121
-    },
-    "MS_10_removed": {
-      "average_score": 1.0
-    },
-    "MS_10": {
-      "average_score": 0.5579553635709144
-    },
-    "MS_5": {
-      "average_score": 0.9328293736501079
-    },
-    "MS_5_removed": {
-      "average_score": 0.9887688984881209
-    },
-    "MS_2": {
-      "average_score": 0.9572354211663067
-    }
+    "RandomMix": 0.9531317494600433,
+    "FirstToLast": 0.9684665226781857,
+    "Each-Choice": 0.8768898488120952,
+    "Different-Operators": 0.9352051835853132,
+    "MS_2_removed": 0.988768898488121,
+    "MS_10_removed": 1.0,
+    "MS_10": 0.5579553635709144,
+    "MS_5": 0.9328293736501079,
+    "MS_5_removed": 0.9887688984881209,
+    "MS_2": 0.9572354211663067
   }
 }
