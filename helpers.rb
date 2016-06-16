@@ -6,5 +6,5 @@ def delete_alives_from_csv(csv)
     .map(&:to_i).reduce(:+)==0 }.compact
   # Remove from alive mutants from csv
   alives_idx.reverse.each{|index| csv.delete_at(index)}
-  puts "--"+ alives_idx.count.to_s + " alive mutants removed before selection" 
+  # puts "--"+ alives_idx.count.to_s + " alive mutants removed before selection" 
 end
