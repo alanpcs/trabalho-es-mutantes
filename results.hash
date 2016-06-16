@@ -750,8 +750,6 @@
         "testTS_1_123,testTS_1_125,testTS_1_130,testTS_1_131,testTS_1_132,testTS_1_136,testTS_1_141,testTS_1_143,testTS_1_160,testTS_1_177,testTS_1_201,testTS_1_209,testTS_1_93": 0.9416846652267818,
         "testTS_1_106,testTS_1_126,testTS_1_131,testTS_1_135,testTS_1_136,testTS_1_138,testTS_1_165,testTS_1_166,testTS_1_201,testTS_1_202,testTS_1_204,testTS_1_216,testTS_1_89,testTS_1_93": 0.9244060475161987,
         "average_score": 0.9352051835853132
-      },
-      "testcases_oi.csv": {
       }
     }
   }
