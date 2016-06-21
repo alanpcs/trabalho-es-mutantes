@@ -1,0 +1,111 @@
+\section{Metodologia utilizada}
+\label{section:UsedMethodology}
+
+Foram executados 6 sistemas implementados em Java já utilizados em outro 
+trabalho de \cite{polo2009decreasing}.
+Os detalhes dos sistemas  relacionados aos números de linhas de código e
+o número de casos de testes foram obtidos usando o plugin Source Code 
+Metrics para Netbeans \cite{sourceCodeMetrics2016} e são apresentados
+junto ao número de FOMs para cada um na tabela 
+(\ref{table:QuantitativeSystemDescription})\footnote{Os casos de teste
+e os sistemas utilizados neste trabalho estão acessíveis em 
+http://bit.do/SUTs4MutationTesting.}.
+
+\begin{table}[h]
+  \label{table:QuantitativeSystemDescription}
+  \centering
+  \caption{Descrição quantitativa sobre os sistemas}
+  \begin{tabular}{|c|c|c|c|} \hline
+    Aplicação               & Linhas de código  & Número de casos de teste     & Número de FOMs \\ \hline
+    Bisect                  & 35                & 25                           & 198            \\ \hline
+    Bub                     & 50                & 256                          & 172            \\ \hline
+    Find                    & 62                & 135                          & 299            \\ \hline
+    Fourballs               & 42                & 96                           & 292            \\ \hline
+    Mid                     & 57                & 125                          & 317            \\ \hline
+    Triangulo(TryTip)       & 88                & 216                          & 605            \\ \hline
+  \end{tabular}
+\end{table}
+
+Os testes usados em todos os sistemas foram implementados no seguinte 
+trabalho \cite{polo2009decreasing}.
+
+\subsection{Produção dos FOMs e casos de teste}
+A geração foi feita usando a ferramenta MuJava \cite{ma2005mujava}, 
+a partir dos mutantes gerados foram criados casos de teste usando JUnit, 
+uma biblioteca Java para testes. Os casos de teste gerados foram 
+executados sobre os mutantes, resultando em uma matriz cuja combinação 
+de linha (mutante) e coluna (caso de teste) contém 0 se o mutante 
+não foi morto em 1 caso tenha sido morto.
+
+Para a análise, os FOMs (mutantes de primeira ordem) vivos foram considerados como equivalente para
+que o \textit{score}\footnote{O \textit{score} é calculado pela relação: 
+(mutantes mortos - (total - equivalentes))/(total - equivalentes)} máximo 
+seja inicialmente 1.0, facilitando a comparação entre as estratégias.
+
+\subsection{Produção dos SOMs}
+As estratégias utilizadas para produção de SOMs (mutantes de segunda ordem) foram implementados por
+Polo\cite{polo2009decreasing} and Mateo\cite{reales2013validating}. Das
+estratégias avaliadas foram escolhidas: \textit{FirstToLast}, 
+\textit{RandomMix} and \textit{Different-Operators}, definias 
+respectivamente por \textit{First2Last}, \textit{Random} e
+\textit{DiffOp}. Além dessas 3 estratégias citadas , foi escolhida mais
+uma de \cite{reales2013validating}: \textit{Each-Choice}.
+
+Essas abordagens demostram uma redução no número de SOMs gerados
+mantendo a eficácia dos testes e foram escolhidas pela facilidade
+de produção, implementação e bons resultados obtidos.
+
+\subsection{Mutação seletiva}
+O objetivo da mutação seletiva é remover os FOMs gerados pelos \textit{x} 
+operadores que mais geraram FOMs, onde \textit{x} é um número inteiro. Uma
+abordagem que parece promissora pois como os mutantes são dos operadores 
+que mais geraram mutantes, uma quantidade significativa de mutantes
+será removida, que por sua vez podem ser mutantes que sejam mortos por muitos
+casos de uso, e caso isso se mostre verdade, serão removidos uma parcela
+considerável de mutantes, reduzindo o custo computacional de processamento
+e mantendo o \textit{score} próximo ao original.
+
+\subsubsection{Implementação}
+Para implementar a estratégia de mutação seletiva foi criado um código
+em Ruby\footnote{Linguagem de programação dinâmica, mais detalhes 
+em: https://www.ruby-lang.org/pt/} que recebe como argumentos:
+\begin{enumerate}
+\item Diretório raíz dos problemas, por exemplo: 'sources/' (Obrigatório).
+\item Conjunto com quantos \textit{x} operadores cujos FOMs serão removidos da 
+matriz original, por exemplo: '[2,5,7,6]' (Opcional).
+\end{enumerate}
+
+Ao executar o código é criado um arquivo chamado MS\_\textit{X}.csv para cada 
+\textit{x} passado no segundo argumento, caso especificado. Caso não seja 
+passado o segundo argumento, o programa irá retirar os FOMs gerados 
+pelos 2, 5 e 10 operadores que mais geraram FOMs e inserílos em arquivos
+ MS\_\textit{X}\_removed.csv para que seja possível também analisar o 
+complemento da estratégia seletiva.
+
+Após a aplicação da estratégia, foi executado um programa\footnote{esta 
+ferramenta foi desenvolvida utilizando um algoritmo genético de busca
+[Féderle, Guizzo, Colanzi, Vergilio e Spinosa, 2013]} que tenta encontrar
+o conjunto mínimo de caso de testes que mata a maioria dos mutantes, porém 
+como este problema é complexo computacionalmete, este programa retorna um 
+conjunto próximo do mínimo, porém não determinístico, e por esse motivo é
+executado 10 vezes. Os conjuntos resultantes de cada execução são escritos
+em arquivos com prefixo 'testcases\_' para cada um dos resultados de cada
+estratégia.
+
+Por fim é executado um outro código em escrito Ruby que recebe como 
+argumentos:
+\begin{enumerate}
+\item Diretório raíz dos problemas, por exemplo: 'sources/' (Obrigatório).
+\item '-\--summary' Flag para agrupar por média simples aritmética os scores
+por estratégia, e não por conjuntos de caso de teste (Opcional).
+\end{enumerate}
+Que busca na raíz recebida como parâmetro por arquivos com o prefixo 
+'\textit{testcases\_}'. Para cada um dos arquivos, lê os conjuntos de 
+casos de teste únicos e para cada um calcula os scores na matriz de FOMs
+mortos originais obtendo como saída uma média do score para cada um 
+dos arquivos.
+
+Os resultados são impressos na saída padrão em JSON\footnote{JSON é uma
+formatação leve de troca de dados, mais detalhes em http://www.json.org/}
+de cada uma das estratégias comparando-os aos FOMs mortos originais, 
+seus resultados serão apresentados a seguir.
