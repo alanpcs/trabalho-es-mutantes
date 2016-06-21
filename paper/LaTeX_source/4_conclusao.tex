@@ -1,0 +1,26 @@
+\section{Conclusão}
+\label{section:conclusao}
+Este estudo apresentou a implementação da estratégia de Mutação Seletiva, 
+assim como os resultados obtidos e uma análise breve sobre seus resultados
+comparando-os aos mutantes de segunda ordem propostos.
+
+Com os resultados apresentados, foi possível ver que algumas das 
+estratégias de mutação seletiva apresentadas foram melhores ou no mínimo 
+empataram ficaram equiparadas às estratégias de mutantes de segunda ordem.
+Entretanto isso pode variar conforme o problema e quantidade de mutantes
+gerados. No geral, vimos que a estratégia que obteve melhor desempenho
+geral para os problemas propostos foi a MS\_5\_removed, que contém os 
+mutantes retirados da mutação seletiva comum.
+
+\section{Considerações Finais e Trabalhos futuros}
+\label{section:future-work}
+Algo que foi considerado ao fim desse estudo e análise, é que quando 
+removemos uma quantidade muito grande de mutantes, o \textit{score}
+final acaba sendo prejudicado, como ocorreu com a estratégia MS\_10. 
+
+Algo que pode-se estudar para mitigar esse problema seria ao invés de
+remover os mutantes gerados pelos \textit{X} operadores que geram mais
+mutantes, calcular quantos operadores foram utilizados para gerar os 
+mutantes de primeira ordem e retirar 10\%, 20\% ou 50\% desses operadores,
+por exemplo, pois assim teremos a garantia que sempre restarão mutantes 
+para serem avaliados.
