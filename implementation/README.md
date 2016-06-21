@@ -8,10 +8,11 @@ Repository structure
 
 **./** 'Implementation files'
 
-**./TestCaseSetSelection/** -> GiovanniGuizzo's Repo that implements the 
-algorithm that finds a testcase subset with a good score...
+**./[TestCaseSetSelection/]("https://github.com/GiovaniGuizzo/TestCaseSetSelection")** -> Giovanni Guizzo's Repo that implements the 
+algorithm that finds a testcase subset with a good score
 
-**./sources/** -> Contains the source matrixes of the studied problems
+**./[sources/]("https://github.com/jacksonpradolima/SUTs4MutationTesting")** -> Contains the source matrixes of the studied problems calculed 
+by Jackson Lima [problems]
 
 ## Running all scripts
 Execute the following command to run all scripts with default values and stores
