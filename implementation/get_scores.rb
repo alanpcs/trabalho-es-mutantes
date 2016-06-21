@@ -5,7 +5,7 @@ require 'json'
 require_relative 'helpers'
 
 if ARGV[0].nil?
-  puts  "Usage: ./get_scores.rb sources/"
+  puts  "Usage: ./get_scores.rb sources/ [--summary]"
   exit
 end
 

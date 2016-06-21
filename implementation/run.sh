@@ -5,5 +5,5 @@ if [[ $1 != 'clean' ]]
     then
     ./selective.rb sources/
     ./run_test_case_selection 
-    ./get_scores.rb sources/
+    ./get_scores.rb sources/ -- summary > results.hash
 fi
