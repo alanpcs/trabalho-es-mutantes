@@ -40,14 +40,17 @@ problems.each do |problem|
       file = File.open(test_case,'r')
       file_name = test_case.split('/').last
       result[problem][method][file_name]={}
-      test_sets = file.readlines.map{|line| line.split.sort.join(",")}.uniq
-      test_sets.each do |test_set|
-        result[problem][method][file_name][test_set] = get_score(test_set,foms_csv,foms_header)
+      test_sets = file.readlines.map{|line| line.split(" ").sort.join(",")}
+      test_sets_uniqs = Hash[test_sets.uniq.map{ |ts| [ts, test_sets.count(ts)] }].sort_by(&:last)
+      test_sets_uniqs.each do |test_set, amount|
+        result[problem][method][file_name][test_set] = [get_score(test_set,foms_csv,foms_header), amount]
       end
       scores = result[problem][method][file_name].values
       if scores.size > 0
-        average_score = scores.reduce(:+).to_f / scores.size 
+        scores_sum = scores.map{|score,amount| score*amount}.reduce(:+).to_f
+        average_score = scores_sum / scores.map{|e| e[1]}.reduce(:+)
         result[problem][method][file_name]["average_score"] = average_score
+        result[problem][method][file_name]["size"] = test_sets[0].split(',').count
       end
     end
   end
