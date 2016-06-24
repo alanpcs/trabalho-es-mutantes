@@ -26,8 +26,9 @@
           0.9821428571428571,
           4
         ],
-        "average_score": 0.9726190476190476,
-        "size": 3
+        "mutants_amount": 85,
+        "testcase_size": 3,
+        "average_score": 0.9726190476190476
       }
     },
     "MS": {
@@ -42,8 +43,9 @@
           0.9226190476190477,
           7
         ],
-        "average_score": 0.9351190476190476,
-        "size": 2
+        "mutants_amount": 27,
+        "testcase_size": 2,
+        "average_score": 0.9351190476190476
       },
       "testcases_MS_2_removed.csv": {
         "testTS_1_25,testTS_1_4,testTS_1_9": [
@@ -74,8 +76,9 @@
           0.9523809523809523,
           3
         ],
-        "average_score": 0.9595238095238094,
-        "size": 3
+        "mutants_amount": 98,
+        "testcase_size": 3,
+        "average_score": 0.9595238095238094
       },
       "testcases_MS_10_removed.csv": {
         "testTS_1_1,testTS_1_10,testTS_1_19,testTS_1_4": [
@@ -98,8 +101,9 @@
           1.0,
           4
         ],
-        "average_score": 1.0,
-        "size": 4
+        "mutants_amount": 168,
+        "testcase_size": 4,
+        "average_score": 1.0
       },
       "testcases_MS_5_removed.csv": {
         "testTS_1_1,testTS_1_19,testTS_1_4,testTS_1_7": [
@@ -122,8 +126,9 @@
           1.0,
           4
         ],
-        "average_score": 1.0,
-        "size": 4
+        "mutants_amount": 141,
+        "testcase_size": 4,
+        "average_score": 1.0
       },
       "testcases_MS_2.csv": {
         "testTS_1_1,testTS_1_19,testTS_1_25": [
@@ -146,8 +151,9 @@
           0.9583333333333334,
           4
         ],
-        "average_score": 0.9583333333333334,
-        "size": 3
+        "mutants_amount": 70,
+        "testcase_size": 3,
+        "average_score": 0.9583333333333334
       }
     },
     "RandomMix": {
@@ -156,8 +162,9 @@
           0.9345238095238095,
           10
         ],
-        "average_score": 0.9345238095238095,
-        "size": 1
+        "mutants_amount": 92,
+        "testcase_size": 1,
+        "average_score": 0.9345238095238095
       }
     },
     "Each-Choice": {
@@ -174,8 +181,9 @@
           0.9404761904761905,
           7
         ],
-        "average_score": 0.9392857142857143,
-        "size": 2
+        "mutants_amount": 48,
+        "testcase_size": 2,
+        "average_score": 0.9392857142857143
       }
     },
     "Different-Operators": {
@@ -184,8 +192,9 @@
           0.9345238095238095,
           10
         ],
-        "average_score": 0.9345238095238095,
-        "size": 1
+        "mutants_amount": 94,
+        "testcase_size": 1,
+        "average_score": 0.9345238095238095
       }
     }
   },
@@ -228,8 +237,9 @@
           0.959349593495935,
           2
         ],
-        "average_score": 0.9552845528455285,
-        "size": 1
+        "mutants_amount": 80,
+        "testcase_size": 1,
+        "average_score": 0.9552845528455285
       }
     },
     "MS": {
@@ -270,8 +280,9 @@
           0.43902439024390244,
           2
         ],
-        "average_score": 0.7495934959349593,
-        "size": 1
+        "mutants_amount": 6,
+        "testcase_size": 1,
+        "average_score": 0.7495934959349593
       },
       "testcases_MS_5.csv": {
         "testTS_1_106": [
@@ -306,8 +317,9 @@
           0.959349593495935,
           2
         ],
-        "average_score": 0.9390243902439025,
-        "size": 1
+        "mutants_amount": 32,
+        "testcase_size": 1,
+        "average_score": 0.9390243902439025
       },
       "testcases_MS_2_removed.csv": {
         "testTS_1_169,testTS_1_231": [
@@ -350,8 +362,9 @@
           1.0,
           1
         ],
-        "average_score": 0.9983739837398374,
-        "size": 2
+        "mutants_amount": 53,
+        "testcase_size": 2,
+        "average_score": 0.9983739837398374
       },
       "testcases_MS_10_removed.csv": {
         "testTS_1_215,testTS_1_33": [
@@ -394,8 +407,9 @@
           1.0,
           1
         ],
-        "average_score": 1.0,
-        "size": 2
+        "mutants_amount": 117,
+        "testcase_size": 2,
+        "average_score": 1.0
       },
       "testcases_MS_5_removed.csv": {
         "testTS_1_186,testTS_1_77": [
@@ -438,8 +452,9 @@
           1.0,
           1
         ],
-        "average_score": 1.0,
-        "size": 2
+        "mutants_amount": 91,
+        "testcase_size": 2,
+        "average_score": 1.0
       },
       "testcases_MS_2.csv": {
         "testTS_1_177,testTS_1_183": [
@@ -482,8 +497,9 @@
           0.975609756097561,
           1
         ],
-        "average_score": 0.9821138211382113,
-        "size": 2
+        "mutants_amount": 70,
+        "testcase_size": 2,
+        "average_score": 0.9821138211382113
       }
     },
     "RandomMix": {
@@ -516,8 +532,9 @@
           0.967479674796748,
           3
         ],
-        "average_score": 0.9666666666666666,
-        "size": 1
+        "mutants_amount": 78,
+        "testcase_size": 1,
+        "average_score": 0.9666666666666666
       }
     },
     "Each-Choice": {
@@ -562,8 +579,9 @@
           0.991869918699187,
           1
         ],
-        "average_score": 0.9829268292682928,
-        "size": 2
+        "mutants_amount": 50,
+        "testcase_size": 2,
+        "average_score": 0.9829268292682928
       }
     },
     "Different-Operators": {
@@ -608,8 +626,9 @@
           0.983739837398374,
           1
         ],
-        "average_score": 0.9691056910569106,
-        "size": 2
+        "mutants_amount": 85,
+        "testcase_size": 2,
+        "average_score": 0.9691056910569106
       }
     }
   },
@@ -620,8 +639,9 @@
           0.915129151291513,
           10
         ],
-        "average_score": 0.915129151291513,
-        "size": 1
+        "mutants_amount": 133,
+        "testcase_size": 1,
+        "average_score": 0.915129151291513
       }
     },
     "MS": {
@@ -666,8 +686,9 @@
           0.996309963099631,
           1
         ],
-        "average_score": 0.9981549815498155,
-        "size": 3
+        "mutants_amount": 11,
+        "testcase_size": 3,
+        "average_score": 0.9981549815498155
       },
       "testcases_MS_5.csv": {
         "testTS_1_27,testTS_1_29,testTS_1_94": [
@@ -710,8 +731,9 @@
           0.996309963099631,
           1
         ],
-        "average_score": 0.9981549815498155,
-        "size": 3
+        "mutants_amount": 55,
+        "testcase_size": 3,
+        "average_score": 0.9981549815498155
       },
       "testcases_MS_2_removed.csv": {
         "testTS_1_113,testTS_1_118,testTS_1_97": [
@@ -754,8 +776,9 @@
           0.985239852398524,
           1
         ],
-        "average_score": 0.9929889298892987,
-        "size": 3
+        "mutants_amount": 136,
+        "testcase_size": 3,
+        "average_score": 0.9929889298892987
       },
       "testcases_MS_10_removed.csv": {
         "testTS_1_38,testTS_1_43,testTS_1_58": [
@@ -798,8 +821,9 @@
           1.0,
           1
         ],
-        "average_score": 1.0,
-        "size": 3
+        "mutants_amount": 260,
+        "testcase_size": 3,
+        "average_score": 1.0
       },
       "testcases_MS_5_removed.csv": {
         "testTS_1_103,testTS_1_13,testTS_1_78": [
@@ -842,8 +866,9 @@
           0.992619926199262,
           1
         ],
-        "average_score": 0.9918819188191881,
-        "size": 3
+        "mutants_amount": 216,
+        "testcase_size": 3,
+        "average_score": 0.9918819188191881
       },
       "testcases_MS_2.csv": {
         "testTS_1_27,testTS_1_49,testTS_1_97": [
@@ -882,8 +907,9 @@
           0.996309963099631,
           2
         ],
-        "average_score": 0.9981549815498155,
-        "size": 3
+        "mutants_amount": 135,
+        "testcase_size": 3,
+        "average_score": 0.9981549815498155
       }
     },
     "RandomMix": {
@@ -928,8 +954,9 @@
           0.9704797047970479,
           1
         ],
-        "average_score": 0.9590405904059042,
-        "size": 2
+        "mutants_amount": 139,
+        "testcase_size": 2,
+        "average_score": 0.9590405904059042
       }
     },
     "Each-Choice": {
@@ -970,8 +997,9 @@
           0.966789667896679,
           2
         ],
-        "average_score": 0.9656826568265682,
-        "size": 2
+        "mutants_amount": 71,
+        "testcase_size": 2,
+        "average_score": 0.9656826568265682
       }
     },
     "Different-Operators": {
@@ -1016,8 +1044,9 @@
           0.985239852398524,
           1
         ],
-        "average_score": 0.9830258302583026,
-        "size": 2
+        "mutants_amount": 148,
+        "testcase_size": 2,
+        "average_score": 0.9830258302583026
       }
     }
   },
@@ -1064,8 +1093,9 @@
           0.9959016393442623,
           1
         ],
-        "average_score": 0.9930327868852459,
-        "size": 4
+        "mutants_amount": 124,
+        "testcase_size": 4,
+        "average_score": 0.9930327868852459
       }
     },
     "MS": {
@@ -1112,8 +1142,9 @@
           1.0,
           1
         ],
-        "average_score": 1.0,
-        "size": 5
+        "mutants_amount": 44,
+        "testcase_size": 5,
+        "average_score": 1.0
       },
       "testcases_MS_2_removed.csv": {
         "testTS_1_33,testTS_1_68,testTS_1_82,testTS_1_83": [
@@ -1156,8 +1187,9 @@
           0.9877049180327869,
           1
         ],
-        "average_score": 0.9831967213114755,
-        "size": 4
+        "mutants_amount": 130,
+        "testcase_size": 4,
+        "average_score": 0.9831967213114755
       },
       "testcases_MS_10_removed.csv": {
         "testTS_1_16,testTS_1_21,testTS_1_41,testTS_1_68,testTS_1_85": [
@@ -1200,8 +1232,9 @@
           1.0,
           1
         ],
-        "average_score": 1.0,
-        "size": 5
+        "mutants_amount": 244,
+        "testcase_size": 5,
+        "average_score": 1.0
       },
       "testcases_MS_5_removed.csv": {
         "testTS_1_11,testTS_1_57,testTS_1_64,testTS_1_74": [
@@ -1244,8 +1277,9 @@
           0.9918032786885246,
           1
         ],
-        "average_score": 0.9881147540983605,
-        "size": 4
+        "mutants_amount": 200,
+        "testcase_size": 4,
+        "average_score": 0.9881147540983605
       },
       "testcases_MS_2.csv": {
         "testTS_1_41,testTS_1_42,testTS_1_58,testTS_1_68,testTS_1_69": [
@@ -1288,8 +1322,9 @@
           1.0,
           1
         ],
-        "average_score": 1.0,
-        "size": 5
+        "mutants_amount": 114,
+        "testcase_size": 5,
+        "average_score": 1.0
       }
     },
     "RandomMix": {
@@ -1334,8 +1369,9 @@
           0.9877049180327869,
           1
         ],
-        "average_score": 0.9893442622950819,
-        "size": 4
+        "mutants_amount": 137,
+        "testcase_size": 4,
+        "average_score": 0.9893442622950819
       }
     },
     "Each-Choice": {
@@ -1380,8 +1416,9 @@
           0.9549180327868853,
           1
         ],
-        "average_score": 0.9770491803278688,
-        "size": 4
+        "mutants_amount": 75,
+        "testcase_size": 4,
+        "average_score": 0.9770491803278688
       }
     },
     "Different-Operators": {
@@ -1426,8 +1463,9 @@
           0.9959016393442623,
           1
         ],
-        "average_score": 0.9918032786885247,
-        "size": 4
+        "mutants_amount": 139,
+        "testcase_size": 4,
+        "average_score": 0.9918032786885247
       }
     }
   },
@@ -1470,8 +1508,9 @@
           0.948051948051948,
           2
         ],
-        "average_score": 0.9528138528138527,
-        "size": 4
+        "mutants_amount": 174,
+        "testcase_size": 4,
+        "average_score": 0.9528138528138527
       }
     },
     "MS": {
@@ -1512,8 +1551,9 @@
           0.4588744588744589,
           2
         ],
-        "average_score": 0.32857142857142857,
-        "size": 1
+        "mutants_amount": 4,
+        "testcase_size": 1,
+        "average_score": 0.32857142857142857
       },
       "testcases_MS_5.csv": {
         "testTS_1_105,testTS_1_24,testTS_1_29,testTS_1_72,testTS_1_8,testTS_1_81": [
@@ -1556,8 +1596,9 @@
           0.9696969696969697,
           1
         ],
-        "average_score": 0.9805194805194806,
-        "size": 6
+        "mutants_amount": 44,
+        "testcase_size": 6,
+        "average_score": 0.9805194805194806
       },
       "testcases_MS_2_removed.csv": {
         "testTS_1_29,testTS_1_5,testTS_1_87,testTS_1_91": [
@@ -1600,8 +1641,9 @@
           0.8571428571428571,
           1
         ],
-        "average_score": 0.9034632034632036,
-        "size": 4
+        "mutants_amount": 108,
+        "testcase_size": 4,
+        "average_score": 0.9034632034632036
       },
       "testcases_MS_10_removed.csv": {
         "testTS_1_118,testTS_1_123,testTS_1_40,testTS_1_46,testTS_1_59,testTS_1_95": [
@@ -1644,8 +1686,9 @@
           1.0,
           1
         ],
-        "average_score": 1.0,
-        "size": 6
+        "mutants_amount": 227,
+        "testcase_size": 6,
+        "average_score": 1.0
       },
       "testcases_MS_5_removed.csv": {
         "testTS_1_117,testTS_1_122,testTS_1_70,testTS_1_95,testTS_1_96": [
@@ -1688,8 +1731,9 @@
           0.9826839826839827,
           1
         ],
-        "average_score": 0.9809523809523808,
-        "size": 5
+        "mutants_amount": 187,
+        "testcase_size": 5,
+        "average_score": 0.9809523809523808
       },
       "testcases_MS_2.csv": {
         "testTS_1_20,testTS_1_29,testTS_1_33,testTS_1_46,testTS_1_61,testTS_1_86": [
@@ -1732,8 +1776,9 @@
           0.9826839826839827,
           1
         ],
-        "average_score": 0.9878787878787879,
-        "size": 6
+        "mutants_amount": 123,
+        "testcase_size": 6,
+        "average_score": 0.9878787878787879
       }
     },
     "RandomMix": {
@@ -1778,8 +1823,9 @@
           0.9653679653679653,
           1
         ],
-        "average_score": 0.9666666666666666,
-        "size": 5
+        "mutants_amount": 167,
+        "testcase_size": 5,
+        "average_score": 0.9666666666666666
       }
     },
     "Each-Choice": {
@@ -1824,8 +1870,9 @@
           0.8095238095238095,
           1
         ],
-        "average_score": 0.8151515151515152,
-        "size": 3
+        "mutants_amount": 70,
+        "testcase_size": 3,
+        "average_score": 0.8151515151515152
       }
     },
     "Different-Operators": {
@@ -1870,8 +1917,9 @@
           1.0,
           1
         ],
-        "average_score": 0.995238095238095,
-        "size": 6
+        "mutants_amount": 182,
+        "testcase_size": 6,
+        "average_score": 0.995238095238095
       }
     }
   },
@@ -1918,8 +1966,9 @@
           0.9697624190064795,
           1
         ],
-        "average_score": 0.9684665226781857,
-        "size": 15
+        "mutants_amount": 294,
+        "testcase_size": 15,
+        "average_score": 0.9684665226781857
       }
     },
     "MS": {
@@ -1960,8 +2009,9 @@
           0.5766738660907127,
           2
         ],
-        "average_score": 0.5598272138228941,
-        "size": 3
+        "mutants_amount": 8,
+        "testcase_size": 3,
+        "average_score": 0.5598272138228941
       },
       "testcases_MS_5.csv": {
         "testTS_1_105,testTS_1_131,testTS_1_135,testTS_1_136,testTS_1_160,testTS_1_168,testTS_1_173,testTS_1_178,testTS_1_195,testTS_1_209,testTS_1_89,testTS_1_96": [
@@ -2004,8 +2054,9 @@
           0.9308855291576674,
           1
         ],
-        "average_score": 0.9328293736501079,
-        "size": 12
+        "mutants_amount": 96,
+        "testcase_size": 12,
+        "average_score": 0.9328293736501079
       },
       "testcases_MS_2_removed.csv": {
         "testTS_1_102,testTS_1_105,testTS_1_106,testTS_1_123,testTS_1_130,testTS_1_131,testTS_1_135,testTS_1_136,testTS_1_143,testTS_1_159,testTS_1_160,testTS_1_166,testTS_1_170,testTS_1_175,testTS_1_186,testTS_1_189,testTS_1_201,testTS_1_34,testTS_1_48,testTS_1_63,testTS_1_77,testTS_1_88,testTS_1_90,testTS_1_93,testTS_1_96": [
@@ -2048,8 +2099,9 @@
           0.9870410367170627,
           1
         ],
-        "average_score": 0.988768898488121,
-        "size": 25
+        "mutants_amount": 242,
+        "testcase_size": 25,
+        "average_score": 0.988768898488121
       },
       "testcases_MS_10_removed.csv": {
         "testTS_1_102,testTS_1_105,testTS_1_106,testTS_1_119,testTS_1_130,testTS_1_131,testTS_1_131,testTS_1_132,testTS_1_136,testTS_1_138,testTS_1_140,testTS_1_141,testTS_1_142,testTS_1_143,testTS_1_144,testTS_1_15,testTS_1_159,testTS_1_166,testTS_1_177,testTS_1_190,testTS_1_196,testTS_1_197,testTS_1_202,testTS_1_208,testTS_1_27,testTS_1_44,testTS_1_47,testTS_1_71,testTS_1_75,testTS_1_84,testTS_1_90,testTS_1_96,testTS_1_97": [
@@ -2092,8 +2144,9 @@
           1.0,
           1
         ],
-        "average_score": 1.0,
-        "size": 33
+        "mutants_amount": 455,
+        "testcase_size": 33,
+        "average_score": 1.0
       },
       "testcases_MS_5_removed.csv": {
         "testTS_1_100,testTS_1_102,testTS_1_105,testTS_1_112,testTS_1_123,testTS_1_131,testTS_1_136,testTS_1_141,testTS_1_142,testTS_1_143,testTS_1_143,testTS_1_146,testTS_1_150,testTS_1_154,testTS_1_159,testTS_1_166,testTS_1_196,testTS_1_200,testTS_1_207,testTS_1_34,testTS_1_35,testTS_1_42,testTS_1_70,testTS_1_87,testTS_1_88,testTS_1_90,testTS_1_91,testTS_1_96": [
@@ -2136,8 +2189,9 @@
           0.9913606911447084,
           1
         ],
-        "average_score": 0.9887688984881209,
-        "size": 28
+        "mutants_amount": 367,
+        "testcase_size": 28,
+        "average_score": 0.9887688984881209
       },
       "testcases_MS_2.csv": {
         "testTS_1_100,testTS_1_120,testTS_1_125,testTS_1_136,testTS_1_138,testTS_1_159,testTS_1_17,testTS_1_174,testTS_1_196,testTS_1_208,testTS_1_209,testTS_1_86,testTS_1_87,testTS_1_88,testTS_1_99": [
@@ -2180,8 +2234,9 @@
           0.9568034557235421,
           1
         ],
-        "average_score": 0.9572354211663067,
-        "size": 15
+        "mutants_amount": 221,
+        "testcase_size": 15,
+        "average_score": 0.9572354211663067
       }
     },
     "RandomMix": {
@@ -2226,8 +2281,9 @@
           0.9460043196544277,
           1
         ],
-        "average_score": 0.9531317494600433,
-        "size": 14
+        "mutants_amount": 294,
+        "testcase_size": 14,
+        "average_score": 0.9531317494600433
       }
     },
     "Each-Choice": {
@@ -2272,8 +2328,9 @@
           0.8660907127429806,
           1
         ],
-        "average_score": 0.8768898488120952,
-        "size": 10
+        "mutants_amount": 127,
+        "testcase_size": 10,
+        "average_score": 0.8768898488120952
       }
     },
     "Different-Operators": {
@@ -2318,8 +2375,9 @@
           0.9244060475161987,
           1
         ],
-        "average_score": 0.9352051835853132,
-        "size": 14
+        "mutants_amount": 336,
+        "testcase_size": 14,
+        "average_score": 0.9352051835853132
       }
     }
   }

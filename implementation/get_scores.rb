@@ -49,8 +49,13 @@ problems.each do |problem|
       if scores.size > 0
         scores_sum = scores.map{|score,amount| score*amount}.reduce(:+).to_f
         average_score = scores_sum / scores.map{|e| e[1]}.reduce(:+)
+        
+        n_lines = File.open(test_case.gsub(/testcases_/, ""),'r').readlines.size
+        
+        result[problem][method][file_name]["mutants_amount"] = n_lines - 1
+        result[problem][method][file_name]["testcase_size"] = test_sets[0].split(',').count
         result[problem][method][file_name]["average_score"] = average_score
-        result[problem][method][file_name]["size"] = test_sets[0].split(',').count
+        
       end
     end
   end
